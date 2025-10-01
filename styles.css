@@ -1,1 +1,60 @@
 /*  your css code here. If applicable */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    background-color: #f4f4f4;
+}
+
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+input[type="text"],
+input[type="password"],
+#submit {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#submit, #existing {
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.3s;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#submit:hover, #existing:hover {
+    background-color: #0056b3;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#existing {
+    margin-top: 15px;
+    width: 320px; /* Match form width for better alignment */
+    background-color: #28a745;
+}
+
+#existing:hover {
+    background-color: #1e7e34;
+}
